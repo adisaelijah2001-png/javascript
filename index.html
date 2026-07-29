@@ -6,13 +6,13 @@
     <script>
 
         function hello() {
-            const heading = document.querySelector('h1');
-          if (heading.innerHTML === 'Hello, World!'){
-            heading.innerHTML = 'Goodbye, universe!';
-          }
-          else {
-            heading.innerHTML = 'Hello, World!';
-          }
+            let heading = document.querySelector('h1');
+           if (heading.textContent === 'Hello, JavaScript!') {
+            heading.textContent = 'hello, world!';
+           }
+           else {
+            heading.textContent = 'Hello, JavaScript!';
+           }
         }
     </script>
     <title>Document</title>
