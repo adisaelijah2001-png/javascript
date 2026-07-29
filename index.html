@@ -6,11 +6,12 @@
     <script>
 
         function hello() {
-          if (document.querySelector('h1').innerHTML === 'Hello, World!'){
-            document.querySelector('h1').innerHTML = 'Goodbye, universe!';
+            let heading = document.querySelector('h1');
+          if (heading.innerHTML === 'Hello, World!'){
+            heading.innerHTML = 'Goodbye, universe!';
           }
           else {
-            document.querySelector('h1').innerHTML = 'Hello, World!';
+            heading.innerHTML = 'Hello, World!';
           }
         }
     </script>
