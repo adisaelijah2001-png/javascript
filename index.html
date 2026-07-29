@@ -3,22 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script>
-
-        function hello() {
-            let heading = document.querySelector('h1');
-           if (heading.textContent === 'Hello, JavaScript!') {
-            heading.textContent = 'hello, world!';
-           }
-           else {
-            heading.textContent = 'Hello, JavaScript!';
-           }
-        }
-    </script>
     <title>Document</title>
+    <script>
+        function count() {
+        if (document.querySelector('h1').innerHTML === 'Hello, World') {
+            document.querySelector('h1').innerHTML = 'Hello, Universe';
+        }
+        else {
+            document.querySelector('h1').innerHTML = 'Hello, World';
+        }   
+    }
+    </script>
 </head>
 <body>
-    <h1>Hello, World!</h1>
-    <button onclick="hello()">Click here</button>
+    <h1>Hello, World</h1>
+    <button onclick="count()">click here</button>
 </body>
 </html>
