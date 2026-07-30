@@ -10,9 +10,12 @@
     let counter = 0;
 
     function count() {
-        count++;
-        document.querySelector.
+        counter++;
+        document.querySelector('button').innerHTML = counter;
     }
+
+    document.querySelector('button').addEventListener('click', count);
+    
     </script>
 </head>
 <body>
