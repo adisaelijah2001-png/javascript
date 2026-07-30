@@ -6,20 +6,19 @@
     <title>Document</title>
 
     <script>
-        let counter = 0;
 
-        function count() {
-            counter++;
-            document.querySelector('h1').innerHTML = counter;
-
-            if (counter % 10 === 0) {
-                alert(`counter is now ${counter}`);
-            }
-            }
+        function heading() {
+        if(document.querySelector('h1').innerHTML === 'Hello, World!') {
+            document.querySelector('h1').innerHTML = 'Goodbye, World'
+        }
+        else {
+            document.querySelector('h1').innerHTML = 'Hello, World';
+        }
+        }
     </script>
 </head>
 <body>
-    <h1>0</h1>
-    <button onclick="count()">click here</button>
+    <h1>Hello, World!</h1>
+    <button onclick="heading()">Click here</button>
 </body>
 </html>
