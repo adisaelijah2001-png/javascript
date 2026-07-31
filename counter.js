@@ -1,15 +1,16 @@
+const form = document.getElementById('myForm');
 
+form.addEventListener('submit', function(event){
 
-let counter = 0;
+    event.preventDefault();
 
-    function count() {
-        counter++;
-        document.querySelector('h1').innerHTML = counter;
+    const name = document.getElementById('name').value;
+    const email = document.getElementById('email').value;
+    const password = document.getElementById('password').value;
 
-        if (counter % 10 === 0)
-        alert(`counter is now ${counter}`)
-    }
-    
-    document.addEventListener('DOMContentLoaded', function(){
-        document.querySelector('button').addEventListener('click', count)
-    });
+    console.log(name);
+    console.log(email);
+    console.log(password);
+
+    alert('Registration successfully!')
+});
