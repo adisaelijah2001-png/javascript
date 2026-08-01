@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,30 +8,30 @@
 </head>
 <body>
     <h1>0</h1>
-    <button onclick="increment()">Increment</button>
-    <button onclick="decrement()">Decrement</button>
-    <button onclick="reset()">Reset</button>
+    <button onclick="increment()">Increase</button>
+    <button onclick="decrement()">Decrease</button>
+    <button onclick="reset()">Reeset</button>
 
     <script>
         let count = 0;
+        
         const heading = document.querySelector('h1');
 
-        function updatecount() {
+        function updatecount(){
             heading.innerHTML = count;
-
         }
 
-        function increment() {
+         function increment(){
             count++;
             updatecount();
         }
 
-        function decrement() {
+        function decrement(){
             count--;
             updatecount();
         }
 
-        function reset() {
+        function reset(){
             count = 0;
             updatecount();
         }

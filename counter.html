@@ -6,29 +6,26 @@
     <title>Document</title>
 </head>
 <body>
-    <!DOCTYPE html>
-<html lang="en">
-<head>
-    <title>Registration Form</title>
-</head>
-<body>
+    <h1>The Form</h1>
 
-    <form id="myForm">
-        <label>Name</label><br>
-        <input type="text" id="name" required><br><br>
+    <form id="myform">
+<pre>
+        <label for="name">Name</label>
 
-        <label>Email</label><br>
-        <input type="email" id="email" required><br><br>
+        <input type="text" placeholder="Name" id="name">
 
-        <label>Password</label><br>
-        <input type="password" id="password" required><br><br>
+        <label for="email">Email</label>
 
-        <button type="submit">Register</button>
+        <input type="email" name="email" id="email" placeholder="Email">
+
+        <label for="password">Password</label>
+
+        <input type="password" name="password" id="password" placeholder="password">
+        
+        <button type="submit">Submit</button>
+</pre>
     </form>
 
-  <script src="counter.js"></script>
-
-</body>
-</html>
+    <script src="counter.js"></script>
 </body>
 </html>

@@ -1,4 +1,5 @@
-const form = document.getElementById('myForm');
+
+const form = document.querySelector('#myform')
 
 form.addEventListener('submit', function(event){
 
@@ -12,5 +13,5 @@ form.addEventListener('submit', function(event){
     console.log(email);
     console.log(password);
 
-    alert('Registration successfully!')
+    alert('Registration Successfully')
 });
