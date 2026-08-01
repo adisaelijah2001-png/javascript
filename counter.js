@@ -1,5 +1,5 @@
 
-const form = document.querySelector('#myform')
+const form = document.getElementById('myform')
 
 form.addEventListener('submit', function(event){
 
