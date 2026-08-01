@@ -13,5 +13,5 @@ form.addEventListener('submit', function(event){
     console.log(email);
     console.log(password);
 
-    alert('Registration Successfully')
+    alert("Registration Successfully")
 });

@@ -10,5 +10,24 @@
     <button id="red">Red</button>
     <button id="blue">Blue</button>
     <button id="green">Green</button>
+
+    <script>
+
+        const red = document.getElementById('red');
+        const blue = document.getElementById('blue');
+        const green = document.getElementById('green');
+
+        red.addEventListener('click', function(){
+            document.body.style.color = 'red';
+        });
+
+        blue.addEventListener('click', function(){
+            document.body.style.color = 'blue';
+        });
+
+        green.addEventListener('click', function(){
+            document.body.style.color = 'green';
+        });
+    </script>
 </body>
 </html>
