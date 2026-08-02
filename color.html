@@ -7,27 +7,15 @@
 </head>
 <body>
     <h1>Hello</h1>
-    <button id="red">Red</button>
-    <button id="blue">Blue</button>
-    <button id="green">Green</button>
+    <button data-color="red">Red</button>
+    <button data-color="blue">Blue</button>
+    <button data-color="green">Green</button>
 
     <script>
-      const red = document.getElementById('red');
-      const blue = document.getElementById('blue');
-      const green = document.getElementById('green');
-
-      red.addEventListener('click', function(){
-        document.body.style.color = 'red';
-      });
-
-      blue.addEventListener('click', function(){
-        document.body.style.color = 'blue';
-      });
-
-      green.addEventListener('click', function(){
-        document.body.style.color = 'green';
-      });
-
+      addEventListener('click', (e)=> {
+        if(e.target.tagName === 'BUTTON')
+        document.body.style.color = e.target.dataset.color;
+      })
     </script>
 </body>
 </html>

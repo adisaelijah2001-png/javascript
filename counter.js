@@ -1,7 +1,7 @@
 
 const form = document.getElementById('myform')
 
-form.addEventListener('submit', function(event){
+form.addEventListener('submit', function(){
 
     event.preventDefault();
 
